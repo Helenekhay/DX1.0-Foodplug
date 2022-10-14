@@ -50,13 +50,13 @@ body{
 
 /* header section starts here */
 header{
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
 }
 .nav-mobile{
     /* border: 3px solid black; */
     display: none;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 30px;
     align-items: center;
     background: var(--main-color);
 
@@ -65,7 +65,7 @@ header{
 .mobile-logo{
     /* width: 200px; */
     /* height: 50px; */
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     display: flex;
     color: var(--white-color);
     align-items: center;
@@ -86,6 +86,8 @@ header{
     width: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    z-index: 6;
 }
 
 .menu{
@@ -118,13 +120,51 @@ header{
 
 .shopburger .menu::after{
 transform:translateY(0) rotate(-45deg);
+background: var(--main-color);
 }
 
 .shopburger .menu::before{
 transform:translateY(0) rotate(45deg);
+background: var(--main-color);
+}
+
+.mobile-linkholder{
+    /* border: 3px solide black; */
+    transition: all 0.5s ease;
+    transform: translateX(200%);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    background: var(--main-color);
+}
+.show-mobile-linkholder{
+    transform: translateX(0);
+}
+.mobile-linkholder ul{
+    list-style: none;
+}
+
+.mobile-active-link{
+    background: var(--white-color);
+    color: var(--main-color) !important;
 }
 
 
+.mobile-linkholder a{
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+    padding: 25px 0 25px 20px;
+}
+.mobile-linkholder button{
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    background: var(--main-color);
+    margin-left: 20px;
+
+}
 .nav-desktop{
     /* border: 3px solid black; */
     display: flex;
@@ -174,7 +214,7 @@ transform:translateY(0) rotate(45deg);
 }
 
 .header-banner-section{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     /* height: 750px; */
     background: url("./img/banner.jpg");
     background-size: cover;
@@ -184,14 +224,14 @@ transform:translateY(0) rotate(45deg);
 
 }
 .banner-content{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 90%;
     height: 100%;
     margin: 0 auto;
 }
 
 .header-textcontainer{
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
     width: 50%;
 }
 
@@ -212,7 +252,7 @@ transform:translateY(0) rotate(45deg);
     margin-right: 10px;
 }
 .header-counter-setion{
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0;

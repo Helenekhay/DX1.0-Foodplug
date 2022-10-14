@@ -10,11 +10,10 @@
 // console.log (document)
 
 var hamburgerdiv = document.querySelector(".hamburger")
-
-
+var mobilelinks = document.querySelector(".mobile-linkholder");
 
 
 function talkanddo() {
     hamburgerdiv.classList.toggle("shopburger")
-    
+    mobilelinks.classList.toggle("show-mobile-linkholder")    
 }
