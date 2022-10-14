@@ -46,8 +46,18 @@ body{
     color: var(--main-color);
 }
 /* reuseables ends here  */
-
-
+.backdrop{
+    width: 100%;
+    height: 100%;
+    background: var(--light-text-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.show-backdrop{
+    display: block;   
+}
 /* header section starts here */
 header{
     /* border: 3px solid tomato; */
@@ -156,7 +166,7 @@ background: var(--main-color);
     color: var(--white-color);
     text-decoration: none;
     display: block;
-    padding: 25px 0 25px 20px;
+    padding: 24px 0 24px 20px;
 }
 .mobile-linkholder button{
     border: 2px solid var(--white-color);
