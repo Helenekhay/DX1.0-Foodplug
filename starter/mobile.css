@@ -30,6 +30,20 @@
     margin: 20px 0;
 }
 
-
 /* aboutus section ends here */
+
+/* explore foods section starts here */
+.explorefoods-card{
+    margin: 20px 0;
+}
+
+.faq-items{
+    min-width: 100%;
+}
+
+.faq-container{
+    padding: 20px
+}
+
+/* explore foods section ends here */
 }
