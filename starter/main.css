@@ -423,6 +423,7 @@ main{
 .explorefoods-p{
     padding: 0 20px;
     margin: 15px;
+    text-align: justify;
 
 }
 
@@ -509,6 +510,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .faq-items{
